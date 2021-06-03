@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+		text-align: center;
+		font-family: sans-serif;
+		background-position: center;
+		background-image: url(gg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;  
+	
+	}
+	.contact-title{
+		margin-top: 200px;
+		color:white;
+		text-transform: uppercase;
+		transition: all 4s ease-in-out;
+		
+	}
+	.contact-title h1{
+		font-size: 32px;
+		line-height: 10px;
+		font color:black;
+
+
+	}
+	.contact-title-h2{
+		font-size: 16px;
+	}
+	form{
+		margin top: 50px;
+		transition: all 4s ease-in-out;
+	}
+	.form-con{
+		width: 600px;
+		background: transparent;
+		border: none;
+		outline: none;
+		border-bottom: 1px solid blue;
+		color: #fff;
+		font-size: 18px;
+		margin-bottom: 16px;
+	}
+	input{
+		height: 45px;
+	}
+	.submit{
+		background: yellow;
+		border-color: transparent;
+		color: blue;
+		font-size: 20px;
+		font-weight: bold;
+		letter-spacing: 2px;
+		height: 28px;
+		margin-top: 20px;
+		text-decoration-line: none;
+	}
+	.submit:hover{
+		background-color:green;
+		cursor: pointer; 
+	}
+</style>
+<body>
+	<div class="contact-title">
+		<h1>Say Hello</h1>
+		<h2>I am always ready to serve you!</h2>
+	</div> 
+	<div class="contact-form">
+		<form action="contact.py" id="contact-form" method="post" >
+			<input name="Name" type="text" class="form-con"placeholder=" Enter Your name" required><br>
+			<input name="Email" type="Email" class="form-con" placeholder=" Enter Your Email Address" required><br>
+			<textarea name="message" class="form-con" placeholder="message" rows="4" required></textarea><br>
+			<input type="submit" class="form-con submit" value="SEND MESSAGE">
+		</form>
+	</div>
+
+</body>
+</html>
